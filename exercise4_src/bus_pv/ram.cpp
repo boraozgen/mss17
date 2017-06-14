@@ -18,4 +18,10 @@ void Ram::read(  unsigned addr, unsigned &data )
     data = mem[addr-start];
 }
   
-
+void Ram::dump( ostream &os )
+{
+	for(unsigned i=0; i<sz; i++) {
+		// TODO: alignment of ':'
+		os << "mem[" << i << "]: " << mem[i] << endl;
+	}
+}

@@ -14,5 +14,9 @@ int sc_main(int argc, char *argv[])
   bus.bus_port(ram1.target_export);
   bus.bus_port(ram2.target_export);
   sc_start();
+  cout << "Ram 1" << endl;
+  ram1.dump(cout);
+  cout << "Ram 2" << endl;
+  ram2.dump(cout);
   return 0;
 }
