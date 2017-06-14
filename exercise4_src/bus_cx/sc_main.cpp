@@ -1,6 +1,6 @@
 #include "master.h"
 #include "ram.h"
-#include "bus_pv.h"
+#include "bus_cx.h"
 
 int sc_main(int argc, char *argv[])
 {
@@ -8,7 +8,7 @@ int sc_main(int argc, char *argv[])
   Ram    ram1("ram1", 0, 16);
   Master master2("master2", 20, 31, 1);
   Ram    ram2("ram2", 16,16);
-  Bus_pv bus("bus");
+  Bus_cx bus("bus", 10, SC_NS);
   master1.initiator_port(bus.bus_export);
   master2.initiator_port(bus.bus_export);
   bus.bus_port(ram1.target_export);

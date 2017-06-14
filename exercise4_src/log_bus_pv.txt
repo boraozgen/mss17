@@ -1,0 +1,96 @@
+Bus slave 0 starts 0 ends 15
+Bus slave 1 starts 16 ends 31
+master1 write(0, 103) at 10 ns
+master2 write(20, 198) at 10 ns
+master1 write(1, 105) at 11 ns
+master2 write(21, 115) at 11 ns
+master1 write(2, 81) at 12 ns
+master2 write(22, 255) at 12 ns
+master1 write(3, 74) at 13 ns
+master2 write(23, 236) at 13 ns
+master1 write(4, 41) at 14 ns
+master2 write(24, 205) at 14 ns
+master1 write(5, 186) at 15 ns
+master2 write(25, 171) at 15 ns
+master1 write(6, 242) at 16 ns
+master2 write(26, 251) at 16 ns
+master1 write(7, 227) at 17 ns
+master2 write(27, 70) at 17 ns
+master1 write(8, 124) at 18 ns
+master2 write(28, 194) at 18 ns
+master1 write(9, 84) at 19 ns
+master2 write(29, 248) at 19 ns
+master1 write(10, 27) at 20 ns
+master2 write(30, 232) at 20 ns
+master1 write(11, 231) at 21 ns
+master2 write(31, 141) at 21 ns
+master1 write(12, 118) at 22 ns
+master2 read(20, 198) at 22 ns
+master1 write(13, 90) at 23 ns
+master2 read(21, 115) at 23 ns
+master1 write(14, 46) at 24 ns
+master2 read(22, 255) at 24 ns
+master1 write(15, 99) at 25 ns
+master2 read(23, 236) at 25 ns
+master1 write(16, 51) at 26 ns
+master2 read(24, 205) at 26 ns
+master1 write(17, 159) at 27 ns
+master2 read(25, 171) at 27 ns
+master1 read(0, 103) at 28 ns
+master2 read(26, 251) at 28 ns
+master1 read(1, 105) at 29 ns
+master2 read(27, 70) at 29 ns
+master1 read(2, 81) at 30 ns
+master2 read(28, 194) at 30 ns
+master1 read(3, 74) at 31 ns
+master2 read(29, 248) at 31 ns
+master1 read(4, 41) at 32 ns
+master2 read(30, 232) at 32 ns
+master1 read(5, 186) at 33 ns
+master2 read(31, 141) at 33 ns
+master1 read(6, 242) at 34 ns
+master1 read(7, 227) at 35 ns
+master1 read(8, 124) at 36 ns
+master1 read(9, 84) at 37 ns
+master1 read(10, 27) at 38 ns
+master1 read(11, 231) at 39 ns
+master1 read(12, 118) at 40 ns
+master1 read(13, 90) at 41 ns
+master1 read(14, 46) at 42 ns
+master1 read(15, 99) at 43 ns
+master1 read(16, 51) at 44 ns
+master1 read(17, 159) at 45 ns
+Ram 1
+mem[0]: 103
+mem[1]: 105
+mem[2]: 81
+mem[3]: 74
+mem[4]: 41
+mem[5]: 186
+mem[6]: 242
+mem[7]: 227
+mem[8]: 124
+mem[9]: 84
+mem[10]: 27
+mem[11]: 231
+mem[12]: 118
+mem[13]: 90
+mem[14]: 46
+mem[15]: 99
+Ram 2
+mem[0]: 51
+mem[1]: 159
+mem[2]: 0
+mem[3]: 0
+mem[4]: 198
+mem[5]: 115
+mem[6]: 255
+mem[7]: 236
+mem[8]: 205
+mem[9]: 171
+mem[10]: 251
+mem[11]: 70
+mem[12]: 194
+mem[13]: 248
+mem[14]: 232
+mem[15]: 141
