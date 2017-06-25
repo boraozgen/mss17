@@ -39,7 +39,7 @@ void MasterAdd::action()
     wait(1, SC_NS);
 
     // Read from adder output
-    initiator_port->read(ADDER_OUTPUT + RAM_OFFSET, data);
+    initiator_port->read(ADDER_OUTPUT, data);
     cout << name() << " read(" << addr << ", " << data << ")" 
          << " at " << sc_time_stamp() << endl;
     wait(1, SC_NS);

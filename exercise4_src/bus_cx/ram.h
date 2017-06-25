@@ -9,6 +9,7 @@ public:
   sc_export<bus_if> target_export;
   void write( unsigned addr, unsigned  data );
   void read(  unsigned addr, unsigned &data );
+  void dump(  ostream &os);
   unsigned start, sz;
   unsigned *mem;
   Ram( sc_module_name mn, unsigned start_addr, unsigned size )
