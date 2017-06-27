@@ -1,13 +1,5 @@
 #include "master_add.h"
 
-#define ADDER_INPUT1    1024
-#define ADDER_INPUT2    1025
-#define ADDER_OUTPUT    1026
-
-#define SUM_RAM_START   64
-
-#define RAM_OFFSET      16
-
 void MasterAdd::action()
 {
   unsigned data;
