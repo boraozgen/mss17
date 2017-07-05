@@ -1,0 +1,121 @@
+Bus slave 0 starts 0 ends 15
+Bus slave 1 starts 16 ends 31
+Bus slave 2 starts 64 ends 79
+Bus slave 3 starts 1024 ends 1026
+master1 write(0, 103) at 20 ns
+master2 write(20, 198) at 30 ns
+master1 write(1, 105) at 40 ns
+master2 write(21, 115) at 50 ns
+master1 write(2, 81) at 60 ns
+master2 write(22, 255) at 70 ns
+master1 write(3, 74) at 80 ns
+master2 write(23, 236) at 90 ns
+master1 write(4, 41) at 100 ns
+master2 write(24, 205) at 110 ns
+master1 write(5, 186) at 120 ns
+master2 write(25, 171) at 130 ns
+master1 write(6, 242) at 140 ns
+master2 write(26, 251) at 150 ns
+master1 write(7, 227) at 160 ns
+master2 write(27, 70) at 170 ns
+master1 write(8, 124) at 180 ns
+master2 write(28, 194) at 190 ns
+master1 write(9, 84) at 200 ns
+master2 write(29, 248) at 210 ns
+master1 write(10, 27) at 220 ns
+master2 write(30, 232) at 230 ns
+master1 write(11, 231) at 240 ns
+master2 write(31, 141) at 250 ns
+master1 write(12, 118) at 260 ns
+master2 read(20, 198) at 270 ns
+master1 write(13, 90) at 280 ns
+master2 read(21, 115) at 290 ns
+master1 write(14, 46) at 300 ns
+master2 read(22, 255) at 310 ns
+master1 write(15, 99) at 320 ns
+master2 read(23, 236) at 330 ns
+master1 write(16, 51) at 340 ns
+master2 read(24, 205) at 350 ns
+master1 write(17, 159) at 360 ns
+master2 read(25, 171) at 370 ns
+master1 read(0, 103) at 380 ns
+master2 read(26, 251) at 390 ns
+master1 read(1, 105) at 400 ns
+master2 read(27, 70) at 410 ns
+master1 read(2, 81) at 420 ns
+master2 read(28, 194) at 430 ns
+master1 read(3, 74) at 440 ns
+master2 read(29, 248) at 450 ns
+master1 read(4, 41) at 460 ns
+master2 read(30, 232) at 470 ns
+master1 read(5, 186) at 480 ns
+master2 read(31, 141) at 490 ns
+master1 read(6, 242) at 500 ns
+master1 read(7, 227) at 1470 ns
+master1 read(8, 124) at 1481 ns
+master1 read(9, 84) at 1492 ns
+master1 read(10, 27) at 1503 ns
+master1 read(11, 231) at 1514 ns
+master1 read(12, 118) at 1525 ns
+master1 read(13, 90) at 1536 ns
+master1 read(14, 46) at 1547 ns
+master1 read(15, 99) at 1558 ns
+master1 read(16, 51) at 1569 ns
+master1 read(17, 159) at 1580 ns
+ram1 contents:
+addr	data
+-------------------------------
+0	103
+1	105
+2	81
+3	74
+4	41
+5	186
+6	242
+7	227
+8	124
+9	84
+10	27
+11	231
+12	118
+13	90
+14	46
+15	99
+ram2 contents:
+addr	data
+-------------------------------
+0	51
+1	159
+2	0
+3	0
+4	198
+5	115
+6	255
+7	236
+8	205
+9	171
+10	251
+11	70
+12	194
+13	248
+14	232
+15	141
+ram3 contents:
+addr	data
+-------------------------------
+0	154
+1	264
+2	81
+3	74
+4	239
+5	301
+6	497
+7	463
+8	329
+9	255
+10	278
+11	301
+12	312
+13	338
+14	278
+15	240
