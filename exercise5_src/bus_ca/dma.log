@@ -1,0 +1,141 @@
+Bus slave 0 starts 0 ends 15
+Bus slave 1 starts 16 ends 31
+Bus slave 2 starts 64 ends 79
+Bus slave 3 starts 1024 ends 1028
+master1 write(0, 167) at 20 ns
+master2 write(20, 241) at 35 ns
+master1 write(1, 217) at 50 ns
+master1 write(2, 130) at 65 ns
+master1 write(3, 200) at 80 ns
+master2 write(21, 42) at 95 ns
+master1 write(4, 216) at 110 ns
+master1 write(5, 67) at 125 ns
+master1 write(6, 77) at 140 ns
+master2 write(22, 254) at 155 ns
+master1 write(7, 152) at 170 ns
+master1 write(8, 140) at 185 ns
+master1 write(9, 226) at 200 ns
+master2 write(23, 85) at 215 ns
+master1 write(10, 179) at 230 ns
+master1 write(11, 23) at 245 ns
+master1 write(12, 17) at 260 ns
+master2 write(24, 71) at 275 ns
+master1 write(13, 152) at 290 ns
+master1 write(14, 47) at 305 ns
+master1 write(15, 17) at 320 ns
+master2 write(25, 84) at 335 ns
+master1 write(16, 45) at 350 ns
+master1 write(17, 88) at 365 ns
+master1 read(0, 167) at 380 ns
+master2 write(26, 5) at 395 ns
+master1 read(1, 217) at 410 ns
+master1 read(2, 130) at 425 ns
+master1 read(3, 200) at 440 ns
+master2 write(27, 245) at 455 ns
+master1 read(4, 216) at 470 ns
+master1 read(5, 67) at 485 ns
+master1 read(6, 77) at 500 ns
+master2 write(28, 107) at 515 ns
+master1 read(7, 152) at 530 ns
+master1 read(8, 140) at 545 ns
+master1 read(9, 226) at 560 ns
+master2 write(29, 214) at 575 ns
+master1 read(10, 179) at 590 ns
+master1 read(11, 23) at 605 ns
+master1 read(12, 17) at 620 ns
+master2 write(30, 136) at 635 ns
+master1 read(13, 152) at 650 ns
+master1 read(14, 47) at 665 ns
+master1 read(15, 17) at 680 ns
+master2 write(31, 7) at 695 ns
+master1 read(16, 45) at 710 ns
+master1 read(17, 88) at 725 ns
+master2 read(20, 241) at 740 ns
+master2 read(21, 42) at 755 ns
+master2 read(22, 254) at 770 ns
+master2 read(23, 85) at 785 ns
+master2 read(24, 71) at 800 ns
+master2 read(25, 84) at 815 ns
+master2 read(26, 5) at 830 ns
+master2 read(27, 245) at 845 ns
+master2 read(28, 107) at 860 ns
+master2 read(29, 214) at 875 ns
+master2 read(30, 136) at 890 ns
+master2 read(31, 7) at 905 ns
+DMA triggered at 1060 ns
+Reading from 0 and 16. Writing to 64 at 1060 ns
+Reading from 1 and 17. Writing to 65 at 1130 ns
+Reading from 2 and 18. Writing to 66 at 1190 ns
+Reading from 3 and 19. Writing to 67 at 1250 ns
+Reading from 4 and 20. Writing to 68 at 1310 ns
+Reading from 5 and 21. Writing to 69 at 1370 ns
+Reading from 6 and 22. Writing to 70 at 1430 ns
+Reading from 7 and 23. Writing to 71 at 1490 ns
+Reading from 8 and 24. Writing to 72 at 1550 ns
+Reading from 9 and 25. Writing to 73 at 1610 ns
+Reading from 10 and 26. Writing to 74 at 1670 ns
+Reading from 11 and 27. Writing to 75 at 1730 ns
+Reading from 12 and 28. Writing to 76 at 1790 ns
+Reading from 13 and 29. Writing to 77 at 1850 ns
+Reading from 14 and 30. Writing to 78 at 1910 ns
+Reading from 15 and 31. Writing to 79 at 1970 ns
+Status 0  at 2045 ns. Stopping simulation.
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+ram1 contents:
+addr	data
+-------------------------------
+0	167
+1	217
+2	130
+3	200
+4	216
+5	67
+6	77
+7	152
+8	140
+9	226
+10	179
+11	23
+12	17
+13	152
+14	47
+15	17
+ram2 contents:
+addr	data
+-------------------------------
+0	45
+1	88
+2	0
+3	0
+4	241
+5	42
+6	254
+7	85
+8	71
+9	84
+10	5
+11	245
+12	107
+13	214
+14	136
+15	7
+ram3 contents:
+addr	data
+-------------------------------
+0	212
+1	305
+2	130
+3	200
+4	457
+5	109
+6	331
+7	237
+8	211
+9	310
+10	184
+11	268
+12	124
+13	366
+14	183
+15	24
