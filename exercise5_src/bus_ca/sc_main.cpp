@@ -23,6 +23,7 @@ int sc_main(int argc, char *argv[])
   master1.initiator_port(bus.bus_export);
   master2.initiator_port(bus.bus_export);
   master3.initiator_port(bus.bus_export);
+  adpt.initiator_port(bus.bus_export);
   bus.clock(clk);
   bus.bus_port(ram1.target_export);
   bus.bus_port(ram2.target_export);
