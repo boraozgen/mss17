@@ -13,28 +13,28 @@ d = 1 + 4 = 5
 SC_THREAD(action)
 ...
 void action() {
-	while(1) {
-		z = x*x + y*y;
-		wait(x.value_changed_event() | y.value_changed_event());
-	}
+   while(1) {
+      z = x*x + y*y;
+      wait(x.value_changed_event() | y.value_changed_event());
+   }
 }
 ```
 
 **c)**
 ```
-e.notify();				// trigger executes at 50ns
-e.notify(30, SC_NS); // plan trigger at 80ns
-e.notify(20, SC_NS); // cancel previous, plan trigger at 70ns
-wait(10, SC_NS);		// advance time to 60ns
-e.notify(20, SC_NS); // ignored trigger at 80ns
-wait(30, SC_NS);		// advance time to 90ns
-							// trigger executes at 70ns
-e.notify(20, SC_NS);	// plan trigger at 110ns
-wait(10, SC_NS);		// advance time to  100ns
-e.notify(0, SC_NS);	// cancel previous, plan trigger at 100ns
-e.notify(5, SC_NS);	// ignored trigger at 105ns
-wait(10, SC_NS);		// advance time to 110ns
-							// trigger executes at 100ns
+e.notify();           // trigger executes at 50ns
+e.notify(30, SC_NS);  // plan trigger at 80ns
+e.notify(20, SC_NS);  // cancel previous, plan trigger at 70ns
+wait(10, SC_NS);      // advance time to 60ns
+e.notify(20, SC_NS);  // ignored trigger at 80ns
+wait(30, SC_NS);      // advance time to 90ns
+							 // trigger executes at 70ns
+e.notify(20, SC_NS);  // plan trigger at 110ns
+wait(10, SC_NS);      // advance time to  100ns
+e.notify(0, SC_NS);   // cancel previous, plan trigger at 100ns
+e.notify(5, SC_NS);   // ignored trigger at 105ns
+wait(10, SC_NS);      // advance time to 110ns
+							 // trigger executes at 100ns
 ```
 
 50  ns - trigger  
@@ -114,8 +114,7 @@ SystemC built-in channels
 
 **a)**
 - The functional view:
-	- Typically SystemC built-in channels are used as
-	  comm. mechanisms
+	- Typically SystemC built-in channels are used as comm. mechanisms
 	- comm. is modeled without timing (with delta cycles)
 
 - The programmer's view:
